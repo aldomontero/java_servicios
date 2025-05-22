@@ -36,13 +36,19 @@ La aplicación inicia con una pantalla de carga (splash screen) que prepara los 
    git clone https://github.com/aldomontero/java_servicios.git
    cd nombre-del-repositorio
    ```
+2. **Crear la base de datos** MySQL (por ejemplo, aldom_com_encuesta).
 
-2. Compila los archivos fuente:
+3. **Importar el archivo .sql incluido** ([java_servicios_ctrl.sql](_Resources/java_servicios_ctrl.sql)) con la estructura y datos iniciales:
+
+   `
+  mysql -u root -p  java_servicios_ctrl < java_servicios_ctrl.sql
+   `
+4. Compila los archivos fuente:
    ```bash
    javac <nombre_del_archivo_clase>
    ```
 
-3. Ejecuta la aplicación:
+5. Ejecuta la aplicación:
    ```bash
    java <nombre_de_clase>
    ```
